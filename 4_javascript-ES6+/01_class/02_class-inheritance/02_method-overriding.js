@@ -2,7 +2,7 @@
 
 // Animal 클래스 선언
 //부모 클래스
-class Aniimal {
+class Animal {
 
     constructor (name, weight) {
         this.name = name;
@@ -23,7 +23,7 @@ class Aniimal {
 }
 
 // Animal을 상속 받는 Tiger 클래스 선언
-class Tiger extends Aniimal {
+class Tiger extends Animal {
 
     attack (target) {
         console.log(`${ this.name }(은)는 ${ target }을 공격합니다.`);

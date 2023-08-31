@@ -2,7 +2,7 @@
 
 // Animal 클래스 선언
 //부모 클래스
-class Aniimal {
+class Animal {
 
     constructor (name, weight) {
         this.name = name;
@@ -22,13 +22,13 @@ class Aniimal {
 
 }
 
-let animal = new Aniimal("동물", 30);
+let animal = new Animal("동물", 30);
 animal.eat(1);
 animal.move(0.5);
 
 // Animal을 상속 받는 Human 클래스 선언
 // extand 키워드를 사용한다.
-class Human extends Aniimal {
+class Human extends Animal {
 
     develop (language) {
         console.log(`${ this.name }(은)는 ${ language }로 개발을 합니다. 정말 즐겁습니다^.^`);
