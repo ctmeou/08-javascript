@@ -19,8 +19,8 @@ message = () => {
 console.log(message());
 
 // 명령문이 하나만 있을 경우 중괄호 생략 가능
-// 함수 몸체 내부의 문의 값으로 평가 될 수 있는 표현식인 문이라면 암묵적으로 반환(return 생략 가능)
-message => () => "Arrow Functions are simple";
+// 함수 몸체 내부의 문의 값으로 평가될 수 있는 표현식인 문이라면 암묵적으로 반환(return 생략 가능)
+message = () => "Arrow Functions are simple";
 
 console.log(message());
 
